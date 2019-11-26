@@ -3,8 +3,8 @@ package sample;
 public class Samo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println("hgbfsgfjkshgfqtd");
+		System.out.println("harish");
 	}
 
 }
