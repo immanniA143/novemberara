@@ -28,7 +28,7 @@ public class POM002 extends BaseTest{
 
   @AfterTest
   public void afterTest() {
-	 takesScreenShot();
+	 //takesScreenShot();
 	 driver.quit();
   }
 
