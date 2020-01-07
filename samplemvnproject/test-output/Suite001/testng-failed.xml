@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT"
+	name="Failed suite [Suite001]">
+	<test name="Test001(failed)">
+		<classes>
+			<class name="com.project.samplemvnproject.LinksTesting1">
+				<methods>
+					<include name="setup" />
+					<include name="tearDown" />
+					<include name="linktesting1" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.LinksTesting1 -->
+			<class name="com.project.samplemvnproject.CheckBox1">
+				<methods>
+					<include name="afterMethod" />
+					<include name="checkboxTest" />
+					<include name="beforeMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.CheckBox1 -->
+			<class name="com.project.samplemvnproject.RadioButton1">
+				<methods>
+					<include name="checkboxTest" />
+					<include name="beforeMethod" />
+					<include name="afterMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.RadioButton1 -->
+		</classes>
+	</test> <!-- Test001(failed) -->
+</suite> <!-- Failed suite [Suite001] -->
