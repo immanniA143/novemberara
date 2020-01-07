@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regression]"
+	parallel="tests">
+	<test name="chrome(failed)" parallel="tests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.project.samplemvnproject.CheckBox1">
+				<methods>
+					<include name="afterMethod" />
+					<include name="checkboxTest" />
+					<include name="beforeMethod" />
+					<include name="beforeMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.CheckBox1 -->
+			<class name="com.project.samplemvnproject.RadioButton1">
+				<methods>
+					<include name="checkboxTest" />
+					<include name="beforeMethod" />
+					<include name="beforeMethod" />
+					<include name="afterMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.RadioButton1 -->
+			<class name="com.project.samplemvnproject.TC001">
+				<methods>
+					<include name="endProcess" />
+					<include name="startProcess" />
+					<include name="startProcess" />
+					<include name="amazon" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.TC001 -->
+			<class name="com.project.samplemvnproject.LinksTesting1">
+				<methods>
+					<include name="setup" />
+					<include name="setup" />
+					<include name="tearDown" />
+					<include name="linktesting1" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.LinksTesting1 -->
+		</classes>
+	</test> <!-- chrome(failed) -->
+	<test name="firefox(failed)" parallel="tests">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.project.samplemvnproject.CheckBox1">
+				<methods>
+					<include name="afterMethod" />
+					<include name="beforeMethod" />
+					<include name="beforeMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.CheckBox1 -->
+			<class name="com.project.samplemvnproject.TC001">
+				<methods>
+					<include name="endProcess" />
+					<include name="startProcess" />
+					<include name="startProcess" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.TC001 -->
+			<class name="com.project.samplemvnproject.RadioButton1">
+				<methods>
+					<include name="beforeMethod" />
+					<include name="beforeMethod" />
+					<include name="afterMethod" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.RadioButton1 -->
+			<class name="com.project.samplemvnproject.LinksTesting1">
+				<methods>
+					<include name="setup" />
+					<include name="setup" />
+					<include name="tearDown" />
+					<include name="linktesting1" />
+				</methods>
+			</class> <!-- com.project.samplemvnproject.LinksTesting1 -->
+		</classes>
+	</test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [regression] -->

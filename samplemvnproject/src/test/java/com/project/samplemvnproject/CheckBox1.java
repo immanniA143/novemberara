@@ -1,0 +1,55 @@
+package com.project.samplemvnproject;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
+
+public class CheckBox1 extends BaseTest
+{
+  
+	@BeforeMethod
+	@Parameters("browser")
+	  public void beforeMethod(String bType) throws Exception 
+	  {
+		
+		test=report.startTest("CheckBox1");
+		
+		init();
+		test.log(LogStatus.INFO, "initializing the properties files.....");
+		
+		launch(bType);
+		test.log(LogStatus.PASS, "Laucned the browser :- " + p.getProperty("chromebrowser"));
+		
+		navigateToUrl("googleurl");
+		//test.log(LogStatus.PASS, "Navigated to Url :- " + p.getProperty("checkboxurl"));
+	  }
+	  
+	  
+	@Test
+	public void checkboxTest()
+	{
+		System.out.println("nmsnvnmbnsdna");
+		/*
+		 * List<WebElement> check=driver.findElements(By.xpath(
+		 * "//td[@class='table5']/input[@type='checkbox']")); for(int
+		 * i=0;i<check.size();i++) {
+		 * System.out.println(check.get(i).getAttribute("value")+"--"+check.get(i).
+		 * getAttribute("checked")); System.out.println(check.get(i).isSelected()); }
+		 */
+	}
+ 
+
+  @AfterMethod
+  public void afterMethod() 
+  {
+	 driver.quit();
+  }
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT"
+	name="Failed suite [SuiteA]">
+	<test name="TestA(failed)">
+		<classes>
+			<class name="com.sample.testngsamp.TC001">
+				<methods>
+					<include name="endProcess" />
+					<include name="startProcess" />
+					<include name="amazon" />
+				</methods>
+			</class> <!-- com.sample.testngsamp.TC001 -->
+			<class name="com.sample.testngsamp.TC002">
+				<methods>
+					<include name="amazon" />
+					<include name="startProcess" />
+					<include name="endProcess" />
+				</methods>
+			</class> <!-- com.sample.testngsamp.TC002 -->
+			<class name="com.sample.testngsamp.TC003">
+				<methods>
+					<include name="amazon" />
+					<include name="startProcess" />
+					<include name="endProcess" />
+				</methods>
+			</class> <!-- com.sample.testngsamp.TC003 -->
+		</classes>
+	</test> <!-- TestA(failed) -->
+</suite> <!-- Failed suite [SuiteA] -->

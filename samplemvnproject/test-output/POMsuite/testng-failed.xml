@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [POMsuite]">
+	<test thread-count="5" name="POM001(failed)">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.sample.testngsamp.POM001">
+				<methods>
+					<include name="afterTest" />
+					<include name="beforeTest" />
+					<include name="f" />
+				</methods>
+			</class> <!-- com.sample.testngsamp.POM001 -->
+		</classes>
+	</test> <!-- POM001(failed) -->
+</suite> <!-- Failed suite [POMsuite] -->

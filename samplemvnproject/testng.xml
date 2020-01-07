@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="POMsuite">
+	<test thread-count="5" name="POM001">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.sample.testngsamp.POM001" />
+		</classes>
+	</test> <!-- POM001 -->
+</suite> <!-- POMsuite -->
