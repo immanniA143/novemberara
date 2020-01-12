@@ -7,7 +7,7 @@ public class FbTestCase001 extends FbBase {
 	public static void main(String[] args) throws Exception {
 		init();
 		launch("chromebrowser");
-		navigateToUrl("FBURL");
+		navigateToUrl("facebookurl");
 		fbLogIn("fbuserid_id","fbpass_id","fbloginbutton_xpath");
 		}
 }

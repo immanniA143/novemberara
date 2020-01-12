@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT"
-	name="Failed suite [Default suite]">
-	<parameter name="browser" value="param-val-not-found" />
-	<test name="Default test(failed)">
-		<classes>
-			<class name="com.sample.testngsamp.POM001">
-				<methods>
-					<include name="beforeTest" />
-					<include name="f" />
-				</methods>
-			</class> <!-- com.sample.testngsamp.POM001 -->
-		</classes>
-	</test> <!-- Default test(failed) -->
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.sample.testngsamp.FbColour">
+        <methods>
+          <include name="colourOfButton"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.sample.testngsamp.FbColour -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

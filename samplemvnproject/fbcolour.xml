@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="fbcolour">
+<parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="fbcolour">
+    <classes>
+      <class name="com.sample.testngsamp.FbColour"/>
+    </classes>
+  </test> <!-- fbcolour -->
+</suite> <!-- fbcolour -->
