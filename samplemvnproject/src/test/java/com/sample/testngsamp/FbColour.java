@@ -1,6 +1,5 @@
 package com.sample.testngsamp;
 
-
 import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -35,6 +34,4 @@ public class FbColour extends BaseTest {
 		driver.quit();
 	}
 	
-	
-
 }
