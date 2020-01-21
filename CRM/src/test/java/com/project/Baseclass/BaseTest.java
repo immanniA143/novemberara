@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class BaseTest {
+public class BaseTest 
+{
 	
 	public static FileInputStream fis;
 	public static Properties env,envProp;
