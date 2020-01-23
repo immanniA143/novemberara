@@ -5,17 +5,27 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testng.annotations.BeforeTest;
+
+import com.project.Utilities.ExcelAPI;
+
 public class BaseTest 
 {
 	
 	public static FileInputStream fis;
+	public static ExcelAPI xls;
 	public static Properties env,envProp;
 	public static String projectPath=System.getProperty("user.dir");
 	public static String envi;
+	public static String sheetName,testName;
 	
-
-	public static void init() {
+	
+@BeforeTest
+	public void init() throws Exception 
+{
+	System.out.println("i am before test");
 		try {
+			
 			fis=new FileInputStream(projectPath+"//src//resource//java//Environment.properties");
 			env=new Properties();
 			env.load(fis);
@@ -35,6 +45,13 @@ public class BaseTest
 		{
 			e.printStackTrace();
 		}
+		
+		testName=this.getClass().getSimpleName();
+		System.out.println(testName);
+		
+		String[] pack = this.getClass().getPackage().getName().split("\\.");
+		String suiteName = pack[pack.length-1];
+		xls=new ExcelAPI(envProp.getProperty(suiteName+"_xls"));
 		
 	}
 }

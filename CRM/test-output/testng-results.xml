@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1262" started-at="2020-01-23T11:24:17Z" finished-at="2020-01-23T11:24:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1262" started-at="2020-01-23T11:24:17Z" finished-at="2020-01-23T11:24:18Z">
+      <class name="com.project.SuiteA.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.SuiteA.LoginTest@5c3bd550]" name="init" is-config="true" duration-ms="1171" started-at="2020-01-23T11:24:17Z" finished-at="2020-01-23T11:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.project.SuiteA.LoginTest@5c3bd550]" name="loginTest" duration-ms="9" started-at="2020-01-23T11:24:18Z" data-provider="getData" finished-at="2020-01-23T11:24:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=Y, UserPassword=aravind@143, UserName=aravindimmanni333@gmail.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.project.SuiteA.LoginTest@5c3bd550]" name="loginTest" duration-ms="7" started-at="2020-01-23T11:24:18Z" data-provider="getData" finished-at="2020-01-23T11:24:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=N, UserPassword=Pass2, UserName=User2, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.project.SuiteA.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
