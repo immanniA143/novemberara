@@ -1,12 +1,14 @@
 package com.project.Baseclass;
 
 import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.Driver.DriverScript;
 import com.project.Utilities.ExcelAPI;
 
 public class BaseTest 
@@ -14,8 +16,9 @@ public class BaseTest
 	
 	public static FileInputStream fis;
 	public static ExcelAPI xls;
-	public static Properties env,envProp;
+	public Properties env,envProp;
 	public static String projectPath=System.getProperty("user.dir");
+	public DriverScript ds;
 	public static String envi;
 	public static String sheetName,testName;
 	
@@ -52,6 +55,14 @@ public class BaseTest
 		String[] pack = this.getClass().getPackage().getName().split("\\.");
 		String suiteName = pack[pack.length-1];
 		xls=new ExcelAPI(envProp.getProperty(suiteName+"_xls"));
+		
+		//initializing DriverScript
+		
+		ds=new DriverScript();
+		ds.setEnv(env);
+		ds.setEnvProp(envProp);
+		
+		
 		
 	}
 }
